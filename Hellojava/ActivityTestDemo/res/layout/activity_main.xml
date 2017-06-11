@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    tools:context="com.qianshang.activitytestdemo.MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:textColor="#ff0000ff"
+        android:text="梁氏家族成员图"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/button1_father"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:text="梁万古"
+        android:background="@drawable/btn_selector"
+        android:textColor="#ffffff00" />
+
+    <Button
+        android:id="@+id/button_liangcheng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/button1_father"
+        android:background="@drawable/btn_selector"
+        android:text="梁成"
+        android:textColor="#ffffff00" />
+
+    <Button
+        android:id="@+id/button_liangyi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_liangzhenxuan"
+        android:layout_toRightOf="@+id/button1_father"
+        android:background="@drawable/btn_selector"
+        android:text="梁谊"
+        android:textColor="#ffffff00" />
+
+    <Button
+        android:id="@+id/button_liangzhenxuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/button_liangcheng"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/btn_selector"
+        android:text="梁振轩"
+        android:textColor="#ffffff00" />
+
+</RelativeLayout>
